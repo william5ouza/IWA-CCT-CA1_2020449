@@ -1,0 +1,29 @@
+{
+  "name": "brazilianjewellery",
+  "version": "1.0.0",
+  "description": "web application part of IWA module BsC Computing",
+  "main": "\\",
+  "scripts": {
+    "test": "npm init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/william5ouza/IWA-CCT-CA1_2020449.git"
+  },
+  "author": "William Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/william5ouza/IWA-CCT-CA1_2020449/issues"
+  },
+  "homepage": "https://github.com/william5ouza/IWA-CCT-CA1_2020449#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-server": "^0.12.3",
+    "path": "^0.12.7",
+    "xml2js": "^0.4.23",
+    "xslt-processor": "^0.11.5"
+  },
+  "devDependencies": {}
+}
