@@ -2,7 +2,7 @@ let url = "catalog.xml";
 $.ajax(url)
 .done(function(xml){
     $(xml).find("entree").each(function(){
-    $("#jewels").append(`<div class="jewels">
+    $("#jewels").append(`<div class="jewel">
                          
                         <image src="${ $(this).find("image").text()}" class="image-jewel">
                         <p class="item">${ $(this).find("item").text()}</p>
