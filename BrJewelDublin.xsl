@@ -25,7 +25,7 @@
                                 <xsl:value-of select="boolean(@vegetarian)" />
                             </xsl:attribute>
                             <td align="center">
-                                <input name="item0" type="checkbox" />
+                                <input name="item" type="checkbox" />
                             </td>
                             <td>
                                 <xsl:value-of select="item" />

@@ -62,7 +62,7 @@ router.post('/post/json', function (req, res) {
         xmlFileToJs('BrJewelDublin.xml', function (err, result) {
             if (err) throw (err);
             
-            result.catalogMenu.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price});
+            result.catalogMenu.section[obj.sec_n].entree.push({'item': obj.item, 'image' : obj.image, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 

@@ -3,36 +3,45 @@
   <section name="NeckLaces">
     <entree>
       <item>Necklace 45cm</item>
+      <image></image>
       <price>12</price>
     </entree>
     <entree>
      <item>Necklace 50cm</item>
+      <image></image>
       <price>12</price>
     </entree>
     <entree>
      <item> Necklace infinty</item>
+      <image></image>
       <price>20</price>
+      
     </entree>
   </section>
   <section name="EarRings">
     <entree>
       <item>Triangles</item>
+      <image></image>
       <price>18</price>
     </entree>
     <entree>
       <item>Circles</item>
+      <image></image>
       <price>18</price>
     </entree>
     <entree>
       <item>GeometricForm</item>
+      <image></image>
       <price>11</price>
     </entree>
     <entree>
       <item>Hearts 2.4cm</item>
+      <image></image>
       <price>12</price>
     </entree>
     <entree>
       <item>Hearts 3.5cm</item>
+      <image></image>
       <price>15</price>
     </entree>
   </section>
@@ -42,48 +51,59 @@
     <entree>
       <!-- example <item>Hearts in red</item>-->  
       <item>NecklaceAndEarring 45cm red hearts</item>
+      <image></image>
       <price>18</price>
     </entree>
     <entree>
-      <item>NecklaceAndEarring 45cm green stones</item>
+      <item>Necklace and earring 45cm green stones</item>
+      <image>https://www.instagram.com/p/CIayBCOFs8g/</image>
       <price>18</price>
     </entree>
     <entree>
       <item>NecklaceAndEarring 45cm blue stones</item>
+      <image>https://www.instagram.com/p/CIayBCOFs8g/</image>
       <price>18</price>
       </entree>
     <entree>
       <item>NecklaceAndEarring 45cm purple stones</item>
+      <image></image>
       <price>18</price>
       </entree>
     <entree>
       <item>NecklaceAndEarring 45cm white hearts</item>
+      <image></image>
       <price>18</price>
       </entree>
     <entree>
       <item>stars rings and chain necklace</item>
+      <image></image>
       <price>18</price>
       </entree>
   </section>
   <section name="Rings">
     <entree>
       <item>V form ring</item>
+      <image></image>
       <price>7</price>
     </entree>
     <entree>
       <item>Double ring</item>
+      <image></image>
       <price>13</price>
     </entree>
     <entree>
       <item>Star ring</item>
+      <image></image>
       <price>11</price>
     </entree>
     <entree>
       <item>Knot ring</item>
+      <image></image>
       <price>11</price>
     </entree>
     <entree>
       <item>Heart ring</item>
+      <image></image>
       <price>11</price>
     </entree>
   </section>
