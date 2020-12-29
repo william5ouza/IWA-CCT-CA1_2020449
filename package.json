@@ -4,6 +4,7 @@
   "description": "web application part of IWA module BsC Computing",
   "main": "\\",
   "scripts": {
+    "start": "node app.js",
     "test": "npm init"
   },
   "repository": {

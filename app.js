@@ -42,7 +42,7 @@ router.get('/get/html', function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'}); //We are responding to the client that the content served back is HTML and the it exists (code 200)
 
     var xml = fs.readFileSync('BrJewelDublin.xml', 'utf8'); //We are reading in the XML file
-    var xsl = fs.readFileSync('BrJewelDublin.xsl', 'utf8'); //We are reading in the XSL file
+    var xsl = fs.readFileSync('BrJewelDublin.xml', 'utf8'); //We are reading in the XSL file
 
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
