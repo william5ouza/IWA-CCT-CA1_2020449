@@ -41,8 +41,8 @@ router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'}); //We are responding to the client that the content served back is HTML and the it exists (code 200)
 
-    var xml = fs.readFileSync('BrJewelDublin.xml', 'utf8'); //We are reading in the XML file
-    var xsl = fs.readFileSync('BrJewelDublin.xsl', 'utf8'); //We are reading in the XSL file
+    var xml = fs.readFileSync('services.xml', 'utf8'); //We are reading in the XML file
+    var xsl = fs.readFileSync('services.xsl', 'utf8'); //We are reading in the XSL file
 
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
@@ -59,14 +59,14 @@ router.post('/post/json', function (req, res) {
 
         console.log(obj)
 
-        xmlFileToJs('BrJewelDublin.xml', function (err, result) {
+        xmlFileToJs('services.xml', function (err, result) {
             if (err) throw (err);
             
-            result.catalogMenu.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price});
+            result.servicesmenu.area[obj.sec_n].client.push({'name': obj.name,'phone': obj.phone, 'location': obj.location,'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('BrJewelDublin.xml', result, function(err){
+            jsToXmlFile('services.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
@@ -84,14 +84,14 @@ router.post('/post/delete', function (req, res) {
 
         console.log(obj)
 
-        xmlFileToJs('BrJewelDublin.xml', function (err, result) {
+        xmlFileToJs('services.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.catalogMenu.section[obj.section].entree[obj.entree];
+            delete result.servicesmenu.area[obj.area].client[obj.client];
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('BrJewelDublin.xml', result, function(err){
+            jsToXmlFile('services.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
