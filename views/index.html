@@ -67,10 +67,11 @@
                             <option value="3">Heating</option>
                         </select>
                         <input class="form-control mt-3" type="text" name="name" placeholder="name">
-                        <input class="form-control mt-3" type="number" name="phone" placeholder="phone">
+                        <input class="form-control mt-3 formatPhone" type="text" placeholder="name">
+                        <input class="form-control mt-3 bfh-phone" name="phone" type="text" placeholder="Phone" minlength="09" maxlength="10" pattern="">
                         <input class="form-control mt-3" type="text" name="location" placeholder="location">
-                        <input class="form-control mt-3" type="number" name="price" placeholder="Price">
-                        <button type="submit" class="btn btn-primary btn-block mt-3">Buy</button>
+                        <input class="form-control mt-3" type="text" name="note" placeholder="Note">
+                        <button type="submit" class="btn btn-primary btn-block mt-3">Send</button>
                     </div>
                 </form>
                 <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
