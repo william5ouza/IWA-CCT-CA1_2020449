@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/william5ouza/IWA-CCT-CA1_2020449#readme",
   "dependencies": {
+    "bootstrap-select": "^1.13.18",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "http": "0.0.1-security",

@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <servicesmenu>
-  <area name="Painting">
-    <client>
+  <section name="Painting"/>
+  <section name="Plumber"/>
+  <section name="Eletric">
+    <entree>
       <name>Diego</name>
-      <phone>6</phone>
-      <location>Dublin 9</location>
-      <price>8</price>
-    </client>
-    <client>
-      <name/>
-      <phone/>
-      <location/>
-      <price/>
-    </client>
-  </area>
-  <area name="Plumbering">
-    <client>
+      <phone>(111) 111-1777</phone>
+      <area>D9</area>
+      <note>I need an quotation for my kitchen</note>
+    </entree>
+    <entree>
       <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <price>1999</price>
-    </client>
-  </area>
-  <area name="Eletric">
-    <client>
-      <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <price>1999</price>
-    </client>
-  </area>
-  <area name="Heating">
-    <client>
-      <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <price>1999</price>
-    </client>
-  </area>
+      <phone>(089) 946-8344</phone>
+      <area>Whitehall</area>
+      <note>My lights are faulty, I need some help</note>
+    </entree>
+  </section>
+  <section name="Heating"/>
 </servicesmenu>
