@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -34,45 +34,53 @@
                         <a class="nav-link" href="index.html">Home
                           </a>
                     </li>
-                     <li class="nav-item active">
+                     <li class="nav-item">
                     
                         <a class="nav-link" href="staff.html">Staff</a>
-                        <span class="sr-only">(current)</span>
+                        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contactus.html">Contact</a>
+                        <span class="sr-only">(current)</span>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Quotations History</h1>
+       <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
+       <div class="panel-group">
+                    <form enctype="application/json" action="/post/json" method="post">
+                    <div class="form">
+                            <select class="form-control" id="mylabel" name="sec_n">
+                            <option value="0">Painting</option>
+                            <option value="1">Plumber</option>
+                            <option value="2">Eletric</option>
+                            <option value="3">Heating</option>
+                        </select>
+                        <input class="form-control mt-3" type="text" name="name" placeholder="Name" required>
+                        <input class="form-control mt-3 bfh-phone" name="phone" type="text" placeholder="Mobile Phone" maxlength="10" required>
+                        <input class="form-control mt-3" type="text" name="location" placeholder="Area" required>
+                        <input class="form-control mt-3" type="text" name="message" placeholder="Message" required>
+                        <button type="submit" class="btn btn-primary btn-block mt-3">Send</button>
+                    </div>
+                </form>
                 
-            </div>
-            <div id="results" class="col-lg-8 order-2 mb-5"></div>
-            <div class="col">
-                <button id="delete" class="btn btn-danger btn-block mt-2">Delete</button>
-                <p class="text-muted text-center">To delete a message please, click the required row first</p>
-               
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container text-center"><span class="text-muted">&copy; 2020</span></div>
-    </footer>
+                </div>
+                </div>               
+   
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/table.js"></script>
     <script src="js/services.js"></script>
     </body>
+     <div class="card bg-info text-dark">
+    <footer class="card-footer ">
+        <div class="container text-center"><span class="text-muted">&copy; 2020</span></div>
+   </div>
+ </footer>
 
 </html>

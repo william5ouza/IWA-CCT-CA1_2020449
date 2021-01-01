@@ -1,4 +1,3 @@
-//THE MAIN STRUCTURE OF THE CODE WAS TAKING FROM https://github.com/mikhail-cct/xml-bootcamp -->
 var http = require('http'), //This module provides the HTTP server functionalities
     path = require('path'), //The path module provides utilities for working with file and directory paths
     express = require('express'), //This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
@@ -62,8 +61,7 @@ router.post('/post/json', function (req, res) {
 
         xmlFileToJs('services.xml', function (err, result) {
             if (err) throw (err);
-            
-            result.servicesmenu.section[obj.sec_n].entree.push({'name': obj.name, 'phone': obj.phone, 'area': obj.area, 'note': obj.note});
+            result.servicesmenu.area[obj.sec_n].client.push({'name': obj.name,'phone': obj.phone, 'location': obj.location,'message': obj.message});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -78,6 +76,7 @@ router.post('/post/json', function (req, res) {
     res.redirect('back');
 
 });
+
 router.post('/post/delete', function (req, res) {
 
     function deleteJSON(obj) {
@@ -87,7 +86,7 @@ router.post('/post/delete', function (req, res) {
         xmlFileToJs('services.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.servicesmenu.section[obj.section].entree[obj.entree];
+            delete result.servicesmenu.area[obj.area].client[obj.client];
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -102,7 +101,6 @@ router.post('/post/delete', function (req, res) {
     res.redirect('back');
 
 });
-
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function () {
     var addr = server.address();

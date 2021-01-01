@@ -4,39 +4,39 @@
         <table id="menuTable" border="1" class="indent">
             <thead>
                 <tr>
-                    <th colspan="5">Quotation list</th>
+                    <th colspan="5">Clients messages</th>
                 </tr>
                 <tr>
                     <th>Select</th>
                     <th>Name</th>
                     <th>Phone</th>
-                    <th>Area</th>
-                    <th>Note</th>
+                    <th>Location</th>
+                    <th>Message</th>
                 </tr>
             </thead>
             <tbody>
-                <xsl:for-each select="/servicesmenu/section">
+                <xsl:for-each select="/servicesmenu/area">
                     <tr>
-                        <td colspan="3">
+                        <td colspan="5">
                             <xsl:value-of select="@name" />
                         </td>
                     </tr>
-                    <xsl:for-each select="entree">
+                    <xsl:for-each select="client">
                         <tr id="{position()}">
-                            <td align="center">
+                                <td align="center">
                                 <input name="item0" type="checkbox" />
                             </td>
                             <td>
                                 <xsl:value-of select="name" />
                             </td>
-                            <td align="right">
+                            <td>
                                 <xsl:value-of select="phone" />
                             </td>
-                            <td align="right">
-                                <xsl:value-of select="area" />
+                            <td>
+                                <xsl:value-of select="location" />
                             </td>
-                            <td align="right">
-                                <xsl:value-of select="note" />
+                            <td>
+                                <xsl:value-of select="message" />
                             </td>
                         </tr>
                     </xsl:for-each>

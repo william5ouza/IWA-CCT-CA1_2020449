@@ -13,75 +13,54 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
-
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-info static-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Mr Handyman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+        </div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse text-dark" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                   <li class="nav-item"></li>
+                        <a class="nav-link active" href="index.html">Home
                             <span class="sr-only">(current)</span>
-                        </a>
+                          </a>
                     </li>
-                    <li class="nav-item">
+                     <li class="nav-item">
+                    
                         <a class="nav-link" href="staff.html">Staff</a>
+                        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                        
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Quotations History</h1>
-                <p class="lead">Please select your items from the menu below</p>
-            </div>
-            <div id="results" class="col-lg-8 order-2 mb-5"></div>
-            <div class="col-lg-4 order-1">
-                <form enctype="application/json" action="/post/json" method="post">
-                    <div class="form-group">
-                        <p>Please select one of our services to quote</p>
-                        <select class="form-control" name="sec_n">
-                            <option value="0">Painting</option>
-                            <option value="1">Plumber</option>
-                            <option value="2">Eletric</option>
-                            <option value="3">Heating</option>
-                        </select>
-                        <input class="form-control mt-3" type="text" name="name" placeholder="Name">
-                        <input class="form-control mt-3 bfh-phone" name="phone" type="text" placeholder="Phone" minlength="09" maxlength="10">
-                        <input class="form-control mt-3" type="text" name="area" placeholder="Area">
-                        <input class="form-control mt-3" type="text" name="note" placeholder="Note">
-                        <button type="submit" class="btn btn-primary btn-block mt-3">Send</button>
-                    </div>
-                </form>
-                <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
-                <p class="text-muted text-center">To delete a quote please, click the required row first</p>
-               
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
+       
+       <div class="panel-group">
+       
+                </div>
+                                        
+    <div class="card bg-info text-dark">
+    <footer class="card-footer ">
         <div class="container text-center"><span class="text-muted">&copy; 2020</span></div>
-    </footer>
+   </div>
+ </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
