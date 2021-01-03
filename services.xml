@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servicesmenu>
+  <area name="Painting">
+    <client>
+      <name>Asandei</name>
+      <phone>(978) 888-8888</phone>
+      <location>Wicklow </location>
+      <message>Can you call me, I have a problem with my bathroom</message>
+    </client>
+    <client>
+      <name>James Brown</name>
+      <phone>(089) 946-3333</phone>
+      <location>Dublin 9</location>
+      <message>Help me</message>
+    </client>
+  </area>
+  <area name="Plumber">
+    <client>
+      <name>Weird Liam</name>
+      <phone>(089) 946-8386</phone>
+      <location>Dublin</location>
+      <message>Can you call me, I have a problem with my bathroom</message>
+    </client>
+    <client>
+      <name>Denisa</name>
+      <phone>(909) 999-9999</phone>
+      <location>Whitehall</location>
+      <message>My toilet is blocked</message>
+    </client>
+    <client>
+      <name>Weird Liam</name>
+      <phone>(089) 946-8386</phone>
+      <location>Wicklow </location>
+      <message>Testing a message</message>
+    </client>
+  </area>
+  <area name="Eletric">
+    <client>
+      <name>Asandei</name>
+      <phone>(089) 946-8386</phone>
+      <location>Wicklow </location>
+      <message>Testing a message</message>
+    </client>
+  </area>
+  <area name="Heating">
+    <client>
+      <name>James Brown</name>
+      <phone>(076) 666-3333</phone>
+      <location>Dublin 9</location>
+      <message>Help me</message>
+    </client>
+  </area>
+</servicesmenu>

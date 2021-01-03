@@ -20,13 +20,13 @@ function draw_table()
 
 function select_row()
 {
-	$("#menuTable tbody tr[id]").click(function ()
+	$("#myTable tbody tr[id]").click(function ()
 	{
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
-		var section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
-		var entree = $(this).attr("id") - 1;
-		delete_row(section, entree);
+		var area = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
+		var client = $(this).attr("id") - 1;
+		delete_row(area, client);
 	})
 };
 
@@ -40,8 +40,8 @@ function delete_row(sec, ent)
 			type: "POST",
 			data:
 			{
-				section: sec,
-				entree: ent
+				area: sec,
+				client: ent
 			},
 			cache: false,
 			success: setTimeout(draw_table, 1000)
