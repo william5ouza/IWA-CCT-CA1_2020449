@@ -2,34 +2,52 @@
 <servicesmenu>
   <area name="Painting">
     <client>
-      <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <note>1999</note>
+      <name>Asandei</name>
+      <phone>(978) 888-8888</phone>
+      <location>Wicklow </location>
+      <message>Can you call me, I have a problem with my bathroom</message>
+    </client>
+    <client>
+      <name>James Brown</name>
+      <phone>(089) 946-3333</phone>
+      <location>Dublin 9</location>
+      <message>Help me</message>
     </client>
   </area>
   <area name="Plumber">
     <client>
-      <name>Diego</name>
-      <phone>999999</phone>
+      <name>Weird Liam</name>
+      <phone>(089) 946-8386</phone>
       <location>Dublin</location>
-      <note>1999</note>
+      <message>Can you call me, I have a problem with my bathroom</message>
+    </client>
+    <client>
+      <name>Denisa</name>
+      <phone>(909) 999-9999</phone>
+      <location>Whitehall</location>
+      <message>My toilet is blocked</message>
+    </client>
+    <client>
+      <name>Weird Liam</name>
+      <phone>(089) 946-8386</phone>
+      <location>Wicklow </location>
+      <message>Testing a message</message>
     </client>
   </area>
   <area name="Eletric">
     <client>
-      <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <note>1999</note>
+      <name>Asandei</name>
+      <phone>(089) 946-8386</phone>
+      <location>Wicklow </location>
+      <message>Testing a message</message>
     </client>
   </area>
   <area name="Heating">
     <client>
-      <name>Diego</name>
-      <phone>999999</phone>
-      <location>Dublin</location>
-      <note>1999</note>
+      <name>James Brown</name>
+      <phone>(076) 666-3333</phone>
+      <location>Dublin 9</location>
+      <message>Help me</message>
     </client>
   </area>
 </servicesmenu>
